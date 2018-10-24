@@ -50,10 +50,84 @@ title: Heads first Design Pattern
 			This concludes the second design pattern:
 			</p>
 			
+			<img src="https://lewisjohnvillamor.github.io/designpattern/images/Capture7.PNG" class="center">
+			
+			<p>
+			
+			Notice how the OO Principle is just being added, and the OO pattern is replaced. I think this is an indicator of how each priniciples will commonly be repeated along the different design patterns. 
+			The third design pattern is the ‘Decorator Pattern’. This time, the name of the business you are involved with is Starbuzz Coffee. The dilema that you had to face is that your business is growing fast and it needs to update your bevarage. The old system is problematic take a look at this:
+
+			</p>
+			
+			<img src="https://lewisjohnvillamor.github.io/designpattern/images/Capture8.PNG" class="center">
+			
+			<p>
+			With the current design, you are forced to some sort of class explosion if you are not to re-oganize the system structure. Hence, it is suggested to apply the different OO principles to the current situtation. This is where I had started to appriecate short pictures like these whenever they appear in the book:
+			</p>
+			
+			<img src="https://lewisjohnvillamor.github.io/designpattern/images/Capture9.PNG" class="center">
+			
+			<p>
+			
+			It is insightful. It gives a sense of reflection on the earlier chapter discussions and how they are related to the current design pattern being discussed. But before moving the the new pattern, the next Design principle is stated: Classes should be open for extension, but closed formodification.  Which basically means, as much as possible our  goal is to allow classes to be easily extended toincorporate new behavior without modifying existing code. Modifying existing codes would more likely cause bugs. And I could not agree more to this statement, it something works, don’t change it unless there is a dire need to restructure it.  Going back to our initail problem, how are we going to fix this. The book suggested us to make use of wrappers and it looks like this: 
+			
+			</p>
+			<img src="https://lewisjohnvillamor.github.io/designpattern/images/Capture10.PNG" class="center">
+			
+			<p>
+			The Decorator Pattern attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality. See how the bevarage is wrapped with condiments instead of instantiating lots of different types of bevarages. Upon system restructure, it would now have something like this:
+			</p>
+			
+			<img src="https://lewisjohnvillamor.github.io/designpattern/images/Capture11.PNG" class="center">
+			<img src="https://lewisjohnvillamor.github.io/designpattern/images/Capture12.PNG" class="center">
+			
+			<p>
+			Like in the previous chapter, topics to reinforce our knowledge were discussed. Java I/O classes are based on decorator patterns. I had used these classes before but it’s just know that I had learned the principle behind it. The book did a great job explaining these things. This concludes the third design Pattern.
+			</p>
+			<img src="https://lewisjohnvillamor.github.io/designpattern/images/Capture13.PNG" class="center">
+			<p>
+			The fourth design pattern is the ‘Factory Pattern’. For this pattern, its like the revisit of the previous design pattern but this time focuses more on encapsulating object creation. The company you that you will be part of is a pizza company that aims to meet maximum flexibility as there is a need for constant change in the system if it is poorly designed. At first, you have a simple code of like this: 
+			</p>
+			
+			<img src="https://lewisjohnvillamor.github.io/designpattern/images/Capture14.PNG" class="center">
+			
+			<p>
+			The problem with the existing design is that what if you will add another type of pizza, there will be such need to manually add those chunk of codes, violating the open close principle. Therefore, this is where we would create our simple factory. There is nothing complex about it but merely a type of abstration. Another challenge for the management now is that everyone wants to franchise the pizza store. The same application of factory is then applied on the logic of pizza franchising. The Factory Method Pattern defines an interfacefor creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses. Take a look on the illustration below:
+			</p>
+			<p>
+			<img src="https://lewisjohnvillamor.github.io/designpattern/images/Capture15.PNG" class="center">
+			</p>
+			<p>
+			Factory Method lets subclasses decide which class to instantiate. The pattern allows subclasses themselves to decide at runtime, but because the creator class is written without knowledge of the  ctual products that will be created, which is decided purely by the choice of the subclass that is used. And from here, we can extract yet another design principle: The dependency Inversion Principle. Depend upon abstractions. Do not depend upon concrete classes.  Applying it to our current system it would have something like this:
+			</p>
+			
+				<img src="https://lewisjohnvillamor.github.io/designpattern/images/Capture16.PNG" class="center">
+			
+			<p>
+			Going back to the scenario of the pizza store, a few franchises have been substituting inferior ingredients in their pies to lower costs and increase their margins. To make this happen, the company hadi mplemented an Abstract Factory pattern on thier framework. The Abstract Factory Pattern provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+			More useful illustrations are as follows comparing what are the difference between factory and abstract factory:
+			</p>
+			
+			<img src="https://lewisjohnvillamor.github.io/designpattern/images/Capture17.PNG" class="center">
+			<img src="https://lewisjohnvillamor.github.io/designpattern/images/Capture18.PNG" class="center">
+			
+			<img src="https://lewisjohnvillamor.github.io/designpattern/images/Capture19.PNG" class="center">
+			<img src="https://lewisjohnvillamor.github.io/designpattern/images/Capture20.PNG" class="center">
+			
+			<p>
+			These are snapshots of how the solutions are provided in the book. It will give you enough insights on how each pattern is applied in a system. This concludes the fourth design pattern. 
+			</p>
+			<img src="https://lewisjohnvillamor.github.io/designpattern/images/Capture21.PNG" class="center">
+			
+			<p>
+			All in all, I can say that the is a good source of fundamental information to those whom would what to know more about the decipline of programmings. It makes you think forward, of which forces you to have your codes be dynamic and systematic as much as possible. I would possibly continue reading the book out of leisure given if time would permit it. I highly recommend this book to my friends whom shares the same interest in developing thier programming knowledge further.
+			</p>
+			
 
 			<ul class="contacts">
-				<li><a href="#">@TwitterHandle</a></li>
-				<li><a href="#">Your Departmental Webpage</a></li>
-				<li><a href="#">Another site you want to link to</a></li>
+				<li><a href="#">Strategy Pattern</a></li>
+				<li><a href="#">Observer Pattern</a></li>
+				<li><a href="#">Decorator Pattern</a></li>
+				<li><a href="#">Factory Pattern</a></li>
 				</ul>
 		</div>
