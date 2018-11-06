@@ -6,27 +6,51 @@ title: CV of Your Name
 	<div class="Summary">
 		<h1> What is Java ?</h1>
 		<p>Java is programming language that produces software for multiple platforms</h1>
-		<p>Features</p>
+		<h2>Features<h2>
 		<img src="https://lewisjohnvillamor.github.io/javaeight/images/javafeatures.PNG" class="center">
 		
+		<p></p>
 		
-		<p>Java Timeline</p>
+		<h2>Java Timeline<h2>
 		<img src="https://lewisjohnvillamor.github.io/javaeight/images/javatimeline.PNG" class="center">
 		
-		<textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 16px !important;">
-public class Employee {
-	
-	private int id;
-	private String name;
-	private double salary;
+<h2>Lambda Expression</h2>
+<p>Lambdas treat functionality as a method argument or code as data. Lambda expressions allow you to present your code more compactly.</p>
 
-	public Employee(int id, String name, double salary) {
-		this.id = id;
-		this.name = name;
-		this.salary = salary;
-	}
-	
-	//Getters &amp; Setters
-}</textarea><
+<img src="https://lewisjohnvillamor.github.io/javaeight/images/SampleCode1.PNG" class="center">
+<img src="https://lewisjohnvillamor.github.io/javaeight/images/SampleCode1.1.PNG" class="center">
+<img src="https://lewisjohnvillamor.github.io/javaeight/images/SampleCode1.2.PNG" class="center">
+
+
+<h2>Default Methods</h2>
+<p>From Java 8 onwards your interfaces can have method implementations as well. These implementations are defined with keyword default.The class implementing the interface can access these methods or they can even override the default methods.
+</p>
+
+<h2>Date and Time API</h2>
+<p>Java 8 comes with a new date-time API under the package java.time. The new API is thread safe.
+LocalDate
+LocalTime
+LocalDateTime
+DateTimeFormatter
+</p>
+
+<h2>Date and Time API</h2>
+<p> A new package  java.util.stream with new functionality which contains classes for processing sequences of elements. Streams can be created using List, Arrays
+</p>
+
+<p>Iterating - stream.forEach(System.out::println);</p>
+<p>Filtering - list.stream().filter(element -> element.contains("P"));</p>
+<p>Matching - boolean isValid = list.stream().anyMatch(element -> element.contains("P"));</p>
+<p>Collecting - List<String> results = 	list.stream().map(element -> element.toUpperCase()).collect(Collectors.toList());</p>
 		
-	</div>
+
+<h2>Type Annotations</h2>
+<p>With Type Annotations you can apply an annotation anywhere a type is used, not just on a declaration. Type Annotations adds stronger type checking to your Java code. Below are few annotations:
+</p>
+
+<p>@ReadOnly – The compiler will raise a flat if any attempt to change the object.</p>
+<p>@NonNull – The compiler can determine code path that may receive a null value.</p>
+<p>@Regex – With this annotation, compiler checks if given string is valid regular expression or not.</p>
+	
+		
+</div>
